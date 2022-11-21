@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagenes/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>AMFOSS</title>
+</head>
+<body>
+    <div id="grid_index"></div>
+        <header id="inicio" class="textos_header">
+            <img src="../imagenes/logo-header.png" alt="Logo amfoss" class="logo_amfoss"></img>
+            <nav>
+                <ul class="nav_principal">
+                    <li>
+                        <a href="../index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="../pages/nosotros.html">Institucional</a>
+                    </li>
+                    <li>
+                        <a href="../pages/services.html">Servicios</a>
+                    </li>
+                    <li>
+                        <a href="../pages/beneficios.html">Beneficios</a>
+                    </li>
+                    <li>
+                        <a href="../pages/contact.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <div class="pages_comentarios">
+                    <h4>Quieres convertirte en afiliado y disfrutar de todos nuestros servicios?</h4>
+                    <form> <!-- Formulario-->  
+                        <div class="form_comentarios">
+                            <fieldset> 
+                                    <legend class="pages_comentarios_titulo">Completa el formulario</legend>
+                                <div class="pages_comentarios_nombre"><!-- etiqueta que ocupa toda la pantalla-->  
+                                    <label for="nombre">Nombre: *</label>
+                                    <input type="text" id="nombre" placeholder="--" required> <!-- tipo texto, el campo id debe tener lo mismo que el for-->  
+                                </div>
+                                <div class="pages_comentarios_apellido"><!-- etiqueta que ocupa toda la pantalla-->  
+                                    <label for="apellido">Apellido: *</label>
+                                    <input type="text" id="apellido" placeholder="--" required> <!-- tipo texto, el campo id debe tener lo mismo que el for-->  
+                                </div>
+                                <div class="pages_comentarios_email">
+                                    <label for="correo">E-mail: *</label>
+                                    <input type="email" placeholder="@" required> <!-- mail activa en el celuar @ en teclado del campo--> 
+                                </div>
+                                <div class="pages_comentarios_estado_civil">
+                                    <label for="desplegable"></label>
+                                    <label for="estado_civil">Estado civil: *</label>
+                                    <select>
+                                        <option value="opcion1">Divorciado/a</option>
+                                        <option value="opcion2">Soltero/a</option>
+                                        <option value="opcion3">Casado/a</option>
+                                    </select>
+                                </div>
+                                <div class="pages_comentarios_genre">
+                                    <label for="desplegable"></label>
+                                    Genero:
+                                    <select id="">
+                                        <option value="opcion1">Hombre</option>
+                                        <option value="opcion2">Mujer</option>
+                                        <option value="opcion3">No binario</option>
+                                    </select>
+                                </div>
+                                <div class="pages_comentarios_novedades">
+                                ¿Desea recibir novedades?
+                                <!-- para el múltiple no hace falta el -->
+                                    <input type="checkbox">
+                                </div>
+                                <div class="pages_comentarios_coment">
+                                    <textarea name="" id="" cols="40" rows="10">Informacion adicional</textarea>
+                                </div>  
+                                <div class="pages_comentarios_botton">
+                                    <input type="reset" value="Limpiar formulario"><!-- Input type reset es el que resetea la informacion-->
+                                    <input type="submit" value="Enviar formulario">  <!-- Input type submit es el que envia la informacion-->
+                                </div>  
+                            </fieldset> 
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div id="footer">
+                <div class="footer_datos">
+                    <p>Asociacion mutual de funcionarios de los organismos de seguridad social </p>
+                    <p>Av. Belgrano 367 Piso 8 - CABA</p>
+                    <p>Lunes a viernes de 09:00hs a 15:00hs</p>
+                    <p>Seguinos en nuestras redes sociales:</p>
+                </div>
+                <div class="red_social">
+                    <ul>
+                        <li>
+                            <p>
+                                <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                            </p>                            
+                        </li>
+                        <li>
+                            <p>
+                                <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                            </p>                            
+                        </li>
+                    </ul>
+                </div>
+            </div>        
+        </footer>
+    </div>
+    </body>
+</body>
+</html>
