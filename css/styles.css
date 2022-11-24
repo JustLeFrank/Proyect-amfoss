@@ -1,5 +1,4 @@
 /******* PAGINA PRINCIPAL (INDEX) *******/
-
 /* MOBILE FIRST */
 * {
   margin: 0%;
@@ -15,11 +14,7 @@ body {
 
 #grid_index {
   display: grid;
-  grid-template-areas:
-    "cabecera"
-    "principal"
-    "novedades"
-    "footer";
+  grid-template-areas: "cabecera" "principal" "novedades" "footer";
 }
 
 header {
@@ -89,6 +84,7 @@ main .textos_main_principal {
   letter-spacing: 0.03em;
   line-height: 1.6;
 }
+
 .textos_main_principal h2 {
   font-size: 15px;
   color: rgb(0, 0, 0);
@@ -103,7 +99,7 @@ main .textos_main_principal {
   font-size: 20px;
   border: solid 1px rgba(4, 0, 245, 0.5);
   color: #fff;
-  background-color: rgb(4, 0, 245, 0.5);
+  background-color: rgba(4, 0, 245, 0.5);
   font-weight: bold;
   text-decoration: none;
   justify-content: end;
@@ -197,65 +193,49 @@ main .textos_main_principal {
 
 @media (min-width: 768px) {
   #grid_index {
-    grid-template-areas:
-      "cabecera cabecera cabecera"
-      "principal principal principal"
-      "novedades novedades"
-      "footer footer";
+    grid-template-areas: "cabecera cabecera cabecera" "principal principal principal" "novedades novedades" "footer footer";
   }
-
   header {
     flex-direction: row;
   }
-
   .nav_principal {
     flex-direction: row;
     gap: 30px;
   }
-
   .nav_principal li a {
     font-size: 18px;
   }
-
   .logo_amfoss {
     height: 50px;
   }
-
   .textos_main_principal h2 {
     font-size: 20px;
   }
-
   .textos_main_principal h3 {
     font-size: 20px;
     align-items: center;
   }
 }
-
 @media (min-width: 1024px) {
   header {
     display: flex;
     align-items: center;
     justify-content: space-around;
   }
-
   .nav_principal li a {
     font-size: 25px;
   }
-
   .logo_amfoss {
     height: 70px;
   }
-
   .textos_main_principal h2 {
     font-size: 35px;
   }
-
   .textos_main_principal h3 {
     font-size: 35px;
     align-items: center;
   }
 }
-
 footer {
   grid-area: footer;
 }
@@ -321,32 +301,18 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
   }
-
   .footer_datos p {
     font-size: 20px;
   }
-
   .red_social p a {
     font-size: 20px;
   }
 }
-
-/****** FIN PAGINA PRINCPAL (INDEX) ******/
-
-
-/****PAGES -RECETARIOS-****/
-
+/* FIN PAGINA PRINCPAL (INDEX) */
+/****PAGES -BENEFICIOS-****/
 /* MOBILE FIRST */
-
 #body_recetario {
-  background-image: linear-gradient(
-    to right,
-    #f3f4f6,
-    #f2f5f8,
-    #f1f6f9,
-    #eff7f9,
-    #eef8f9
-  );
+  background-image: linear-gradient(to right, #f3f4f6, #f2f5f8, #f1f6f9, #eff7f9, #eef8f9);
 }
 
 main .texts_beneficios {
@@ -408,7 +374,7 @@ main .texts_beneficios {
   text-align: center;
   transition: all 0.3s;
 }
-  
+
 .beneficios_container .card_beneficios:hover {
   transform: translateY(-15px);
   box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
@@ -421,49 +387,39 @@ main .texts_beneficios {
 }
 
 @media (min-width: 768px) {
-
   .beneficios_container .card_beneficios {
     width: 350px;
     height: 320px;
     border: solid 12px;
   }
-
   .beneficios_container .card_beneficios img {
-      width: 350px;
-      height: 320px;
+    width: 350px;
+    height: 320px;
   }
-
   .texts_beneficios h2 {
     font-size: 30px;
   }
-
   .title_beneficios {
     font-size: 35px;
   }
 }
-
 @media (min-width: 1024px) {
-
   .beneficios_container .card_beneficios {
     width: 400px;
     height: 450px;
     border: solid 12px;
   }
-
   .beneficios_container .card_beneficios img {
-      width: 100%;
-      height: 100%;
+    width: 100%;
+    height: 100%;
   }
-
   /* .texts_beneficios h2 {
     font-size: 40px;
   } */
-
   .title_beneficios {
     font-size: 50px;
   }
 }
-
 #sugerencias_chef {
   grid-area: novedades;
   margin: 0;
@@ -492,6 +448,7 @@ main .texts_beneficios {
 .bottomtexts_beneficios h3 {
   font-size: 20px;
 }
+
 .bottomtexts_beneficios p {
   font-size: 10px;
 }
@@ -504,7 +461,6 @@ main .texts_beneficios {
     font-size: 15px;
   }
 }
-
 @media (min-width: 1024px) {
   .bottomtexts_beneficios h3 {
     font-size: 30px;
@@ -513,11 +469,8 @@ main .texts_beneficios {
     font-size: 20px;
   }
 }
-
 /****** FIN PAGINA RECETARIO ******/
-
-/****PAGES GALERIA TEMATICA****/
-
+/****PAGES SERVICIOS****/
 /* MOBILE FIRST */
 main .texts_services {
   margin-top: 50px;
@@ -614,30 +567,24 @@ main .texts_services {
   .textos_main_galeria_tematica h2 {
     font-size: 35px;
   }
-
   .textos_main_galeria_tematica h3 {
     font-size: 30px;
   }
-
   .title_services {
     font-size: 40px;
   }
 }
-
 @media (min-width: 1024px) {
   .textos_main_galeria_tematica h2 {
     font-size: 40px;
   }
-
   .textos_main_galeria_tematica h3 {
     font-size: 35px;
   }
-
   .title_services {
     font-size: 50px;
   }
 }
-
 .bottomtext_services {
   display: inline-block;
   width: 100%;
@@ -653,6 +600,7 @@ main .texts_services {
 .bottomtext_services h4 {
   font-size: 20px;
 }
+
 .bottomtext_services p {
   font-size: 10px;
 }
@@ -665,7 +613,6 @@ main .texts_services {
     font-size: 15px;
   }
 }
-
 @media (min-width: 1024px) {
   .bottomtext_services h4 {
     font-size: 30px;
@@ -674,17 +621,15 @@ main .texts_services {
     font-size: 20px;
   }
 }
-
+/**** FIN PAGES SERVICIOS****/
 /****page about us****/
-
 /* MOBILE FIRST */
-
 .text_aboutUs {
   font-size: 20px;
-  color:chocolate;
+  color: chocolate;
 }
 
-.section_pages_aboutUs_container{
+.section_pages_aboutUs_container {
   max-width: 1000em;
   margin: 1em;
   height: 400px;
@@ -693,7 +638,8 @@ main .texts_services {
   border: solid 5px rgb(201, 102, 102);
   position: relative;
 }
-.section_pages_aboutUs_text{
+
+.section_pages_aboutUs_text {
   max-width: 1000em;
   margin: 1em;
   border: 5px solid #000428;
@@ -701,8 +647,7 @@ main .texts_services {
   background-color: rgba(250, 250, 250, 0.95);
 }
 
-
-.pages_aboutUs_title{
+.pages_aboutUs_title {
   margin: 0%;
   font-size: 70px;
   color: #b73413;
@@ -712,7 +657,7 @@ main .texts_services {
 .pages_aboutUs_text {
   font-size: 30px;
   line-height: 1.5;
-  color:black;
+  color: black;
 }
 
 .pages_aboutUs_sign {
@@ -723,52 +668,40 @@ main .texts_services {
 }
 
 @media (min-width: 768px) {
-  .pages_nostros_explorador_tipo{
+  .pages_nostros_explorador_tipo {
     font-size: 30px;
-    }
-
-    .pages_explorador_nombre_nosotros{
-      font-size: 25px;
-    }
-
-    .pages_explorador_nosotros_descripcion {
-      font-size: 20px;
-    }
-
-    .pages_explorador_nosotros_pie {
-      font-size: 25px;
-    }
-
-    .pages_galeria_nosotros_explorador_imagen img{
-      height: 400px;
-    }
+  }
+  .pages_explorador_nombre_nosotros {
+    font-size: 25px;
+  }
+  .pages_explorador_nosotros_descripcion {
+    font-size: 20px;
+  }
+  .pages_explorador_nosotros_pie {
+    font-size: 25px;
+  }
+  .pages_galeria_nosotros_explorador_imagen img {
+    height: 400px;
+  }
 }
-
 @media (min-width: 1024px) {
-  .pages_nostros_explorador_tipo{
+  .pages_nostros_explorador_tipo {
     font-size: 70px;
-    }
-
-    .pages_explorador_nombre_nosotros{
-      font-size: 35px;
-    }
-
-    .pages_explorador_nosotros_descripcion {
-      font-size: 30px;
-    }
-
-    .pages_explorador_nosotros_pie {
-      font-size: 35px;
-    }
+  }
+  .pages_explorador_nombre_nosotros {
+    font-size: 35px;
+  }
+  .pages_explorador_nosotros_descripcion {
+    font-size: 30px;
+  }
+  .pages_explorador_nosotros_pie {
+    font-size: 35px;
+  }
 }
-
 /****** FIN PAGINA NOSOTROS ******/
-
 /****** PAGES -COMENTARIOS-******/
-
 /* MOBILE FIRST */
-
- .pages_comentarios{
+.pages_comentarios {
   width: 80%;
   height: 100%;
   margin: 20px;
@@ -781,10 +714,9 @@ main .texts_services {
   font-size: 20px;
   margin-bottom: 10px;
   text-align: center;
-
 }
 
-.form_comentarios{
+.form_comentarios {
   width: 100%;
   max-width: 100%;
   display: flex;
@@ -793,7 +725,6 @@ main .texts_services {
   align-items: center;
   overflow: hidden;
 }
-
 
 .pages_comentarios_titulo {
   font-size: 18px;
@@ -803,463 +734,86 @@ main .texts_services {
   font-weight: bold;
 }
 
-.pages_comentarios_nombre{
+.pages_comentarios_nombre {
   padding: 5px;
   font-size: 10px;
   font-weight: bold;
 }
 
-.pages_comentarios_apellido{
+.pages_comentarios_apellido {
   padding: 5px;
   font-size: 10px;
   font-weight: bold;
 }
 
-.pages_comentarios_email{
+.pages_comentarios_email {
   padding: 5px;
   font-size: 10px;
   font-weight: bold;
 }
 
-.pages_comentarios_estado_civil{
+.pages_comentarios_estado_civil {
   padding: 5px;
   font-size: 10px;
   font-weight: bold;
 }
 
-.pages_comentarios_genre{
+.pages_comentarios_genre {
   padding: 5px;
   font-size: 10px;
   font-weight: bold;
 }
 
-.pages_comentarios_novedades{
+.pages_comentarios_novedades {
   padding: 5px;
   font-size: 10px;
   font-weight: bold;
 }
 
-.pages_comentarios_coment{
+.pages_comentarios_coment {
   padding: 5px;
   font-size: 10px;
   font-weight: bold;
 }
 
-.pages_comentarios_botton{
+.pages_comentarios_botton {
   padding: 2px;
 }
 
 @media (min-width: 768px) {
-
-
   .pages_comentarios h4 {
     font-size: 35px;
   }
-
   .pages_comentarios_titulo {
     font-size: 20px;
   }
-  
-  .pages_comentarios_nombre{
+  .pages_comentarios_nombre {
     font-size: 15px;
   }
-  
-  .pages_comentarios_apellido{
+  .pages_comentarios_apellido {
     font-size: 15px;
   }
-  
-  .pages_comentarios_email{
+  .pages_comentarios_email {
     font-size: 15px;
   }
-  
-  .pages_comentarios_estado_civil{
+  .pages_comentarios_estado_civil {
     font-size: 15px;
   }
-  
-  .pages_comentarios_genre{
+  .pages_comentarios_genre {
     font-size: 15px;
   }
-  
-  .pages_comentarios_novedades{
+  .pages_comentarios_novedades {
     font-size: 15px;
   }
-  
-  .pages_comentarios_coment{
+  .pages_comentarios_coment {
     font-size: 15px;
   }
 }
-
 @media (min-width: 1024px) {
-  .pages_comentarios{
+  .pages_comentarios {
     width: 100%;
   }
 }
-
 /****** FIN PAGINA COMENTARIOS ******/
 
-/****** SUB PAGES COCINATE ALGO ******/
-
-/* MOBILE FIRST */
-
-main .textos_main_cocinate_algo {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  justify-content:flex-end;
-  flex-direction: column;
-  letter-spacing: 0.03em;
-  line-height: 1.6;
-  position: relative;
-  overflow: hidden;
-}
-
-.img_main_cocinate_algo{
-  display: flex;
-  width: 100%;
-  height: 50vh;
-  align-items: center;
-  justify-content:flex-end;
-  flex-direction: column;
-  letter-spacing: 0.03em;
-  line-height: 1.6;
-  background-image: url(../imagenes/imagen_cocinate_algo.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: unset;
-  background-position: center;
-  position: relative;
-  overflow: hidden;
-
-}
-
-.textos_main_cocinate_algo h2{
-  font-size: 20px;
-  color: black;
-  font-weight: bold;
-}
-
-/*--recetarios--*/
-
-.title_subpage_recetario {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
-  font-size: 20px;
-  color: #b73413;
-  margin-top: 40px;
-  margin-left: 30px;
-  font-weight: bold;
-  font-style: italic;
-}
-
-.subpage_recetario_contenedor {
-  width: 100%;
-  max-width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.subpage_recetario_contenedor .subpage_recetario_card {
-  width: 100%;
-  height: 670px;
-  border-radius: 40px 0px 40px 0px;
-  box-shadow: 0 2px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  margin: 20px;
-  text-align: center;
-  transition: all 0.25s;
-}
-
-.subpage_recetario_card {
-  background-color: rgba(236, 240, 193, 0.247);
-  padding: 1%;
-}
-
-.subpage_recetario_contenedor .subpage_recetario_card:hover {
-  transform: translateY(-15px);
-  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-}
-
-.subpage_recetario_contenedor .subpage_recetario_card img {
-  width: 200px;
-  height: 170px;
-  border: solid 5px;
-}
-
-.subpage_recetario_contenedor .subpage_recetario_card h3 {
-  font-size: 15px;
-  font-weight: 600;
-  justify-content: center;
-  text-align: center;
-}
-
-.subpage_recetario_contenedor .subpage_recetario_card h4 {
-  font-size: 10px;
-  font-weight: 600;
-  justify-content: left;
-  text-align: left;
-  margin-top: 10px;
-}
-
-.subpage_recetario_contenedor .subpage_recetario_card ul{
-  text-align: left;
-  padding: 5px;
-  margin: 10px;
-}
-
-.subpage_recetario_contenedor .subpage_recetario_card ul li{
-  justify-content: right;
-  font-size: 10px;
-}
-
-.subpage_recetario_contenedor .subpage_recetario_card ol{
-  text-align: left;
-  display:inline-block;
-  padding: 5px;
-  margin: 10px;
-}
-
-.subpage_recetario_contenedor .subpage_recetario_card ol li{
-  justify-content: right;
-  font-size: 10px;
-}
-
-.subpage_recetario_contenedor .subpage_recetario_card p {
-  font-size: 11px;
-  text-align: left;
-  justify-content: left;
-}
-
-@media (min-width: 768px) {
-
-  .textos_main_cocinate_algo h2{
-    font-size: 35px;
-  }
-    
-  .img_main_cocinate_algo {
-    height: 60vh;
-  }
- 
-  .title_subpage_recetario {
-    font-size: 30px;
-  }
-  
-  .subpage_recetario_contenedor .subpage_recetario_card {
-    height: 800px;
-  }
-  
-  .subpage_recetario_contenedor .subpage_recetario_card img {
-    width: 230px;
-    height: 200px;
-    border: solid 7px;
-  }
-  
-  .subpage_recetario_contenedor .subpage_recetario_card h3 {
-    font-size: 15px;
-  }
-  
-  .subpage_recetario_contenedor .subpage_recetario_card h4 {
-    font-size: 15px;
-  }
-  
-  
-  .subpage_recetario_contenedor .subpage_recetario_card ul li{
-    font-size: 15px;
-  }
-    
-  .subpage_recetario_contenedor .subpage_recetario_card ol li{
-    font-size: 15px;
-  }
-  
-  .subpage_recetario_contenedor .subpage_recetario_card p {
-    font-size: 15px;
-  }
-
-}
-
-@media (min-width: 1024px) {
-
-  .textos_main_cocinate_algo h2{
-    font-size: 40px;
-  }
-  
-  .img_main_cocinate_algo {
-    height: 80vh;
-  }
- 
-  /*--recetarios--*/
-  
-  .title_subpage_recetario {
-    font-size: 35px;
-  }
-  
-  .subpage_recetario_contenedor .subpage_recetario_card {
-    height: 1000px;
-  }
-  
-  .subpage_recetario_contenedor .subpage_recetario_card img {
-    width: 280px;
-    height: 250px;
-    border: solid 8px;
-  }
-  
-  .subpage_recetario_contenedor .subpage_recetario_card h3 {
-    font-size: 20px;
-  }
-  
-  .subpage_recetario_contenedor .subpage_recetario_card h4 {
-    font-size: 15px;
-  }
-  
-  
-  .subpage_recetario_contenedor .subpage_recetario_card ul li{
-    font-size: 20px;
-  }
-    
-  .subpage_recetario_contenedor .subpage_recetario_card ol li{
-    font-size: 20px;
-  }
-  
-  .subpage_recetario_contenedor .subpage_recetario_card p {
-    font-size: 20px;
-  }
-
-}
-
-/****** FIN SUB PAGES COCINATE ALGO ***/
-
-/****** SUB PAGES TE PINTO UN TRAGO ******/
-
-/* MOBILE FIRST */
-
-main .textos_main_preparate_un_trago {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  justify-content:flex-end;
-  flex-direction: column;
-  letter-spacing: 0.03em;
-  line-height: 1.6;
-  position: relative;
-  overflow: hidden;
-}
-
-.img_main_preparate_un_trago {
-  display: flex;
-  width: 100%;
-  height: 50vh;
-  align-items: center;
-  justify-content:flex-end;
-  flex-direction: column;
-  letter-spacing: 0.03em;
-  line-height: 1.6;
-  background-image: url(../imagenes/imagen18.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: unset;
-  background-position: center;
-  position: relative;
-  overflow: hidden;
-
-}
-
-.textos_main_preparate_un_trago h2{
-  font-size: 20px;
-  color: black;
-  font-weight: bold;
-}
-
-@media (min-width: 768px) {
-
-  .textos_main_preparate_un_trago h2{
-    font-size: 35px;
-  }
-  
-  .img_main_preparate_un_trago{
-    height: 60vh;
-  }
-}
-
-@media (min-width: 1024px) {
-
-  .textos_main_preparate_un_tragoh2{
-    font-size: 40px;
-  }
-
-  .img_main_preparate_un_trago{
-    height: 90vh;
-  }
-}
-
-/****** FIN SUB PAGES PREPARATE UN TRAGO ***/
-
-/****** SUB PAGES TE HICISTE UN POSTRE ******/
-
-/* MOBILE FIRST */
-
-main .textos_main_hiciste_un_postre {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  justify-content:flex-end;
-  flex-direction: column;
-  letter-spacing: 0.03em;
-  line-height: 1.6;
-  position: relative;
-  overflow: hidden;
-}
-
-.img_main_hiciste_un_postre {
-  display: flex;
-  width: 100%;
-  height: 50vh;
-  align-items: center;
-  justify-content:flex-end;
-  flex-direction: column;
-  letter-spacing: 0.03em;
-  line-height: 1.6;
-  background-image: url(../imagenes/imagen20.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: unset;
-  background-position: center;
-  position: relative;
-  overflow: hidden;
-
-}
-
-.textos_main_hiciste_un_postre h2{
-  font-size: 20px;
-  color: black;
-  font-weight: bold;
-}
-
-@media (min-width: 768px) {
-  
-  .textos_main_hiciste_un_postre h2{
-    font-size: 35px;
-  }
-
-  .img_main_hiciste_un_postre {
-    height: 60vh;
-  }
-
-}
-
-@media (min-width: 1024px) {
-
-  .textos_main_hiciste_un_postre h2{
-    font-size: 40px;
-  }
-
-  .img_main_hiciste_un_postre {
-    height: 90vh;
-  }
-
-}
-
-/****** FIN SUB PAGES  TE HICISTE UN POSTRE ***/
+/*# sourceMappingURL=styles.css.map */

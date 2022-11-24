@@ -1,0 +1,132 @@
+/****** PAGES -COMENTARIOS-******/
+
+/* MOBILE FIRST */
+
+.pages_comentarios{
+    width: 80%;
+    height: 100%;
+    margin: 20px;
+  }
+  
+  .pages_comentarios h4 {
+    font-family: sans-serif;
+    letter-spacing: 0.01em;
+    line-height: 1.6;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  
+  }
+  
+  .form_comentarios{
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  
+  .pages_comentarios_titulo {
+    font-size: 18px;
+    color: #b73413;
+    font-style: italic;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .pages_comentarios_nombre{
+    padding: 5px;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  
+  .pages_comentarios_apellido{
+    padding: 5px;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  
+  .pages_comentarios_email{
+    padding: 5px;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  
+  .pages_comentarios_estado_civil{
+    padding: 5px;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  
+  .pages_comentarios_genre{
+    padding: 5px;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  
+  .pages_comentarios_novedades{
+    padding: 5px;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  
+  .pages_comentarios_coment{
+    padding: 5px;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  
+  .pages_comentarios_botton{
+    padding: 2px;
+  }
+  
+  @media (min-width: 768px) {
+  
+  
+    .pages_comentarios h4 {
+      font-size: 35px;
+    }
+  
+    .pages_comentarios_titulo {
+      font-size: 20px;
+    }
+    
+    .pages_comentarios_nombre{
+      font-size: 15px;
+    }
+    
+    .pages_comentarios_apellido{
+      font-size: 15px;
+    }
+    
+    .pages_comentarios_email{
+      font-size: 15px;
+    }
+    
+    .pages_comentarios_estado_civil{
+      font-size: 15px;
+    }
+    
+    .pages_comentarios_genre{
+      font-size: 15px;
+    }
+    
+    .pages_comentarios_novedades{
+      font-size: 15px;
+    }
+    
+    .pages_comentarios_coment{
+      font-size: 15px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .pages_comentarios{
+      width: 100%;
+    }
+  }
+  
+  /****** FIN PAGINA COMENTARIOS ******/

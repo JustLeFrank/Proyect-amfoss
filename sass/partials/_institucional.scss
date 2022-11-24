@@ -1,0 +1,88 @@
+/****page about us****/
+
+/* MOBILE FIRST */
+
+.text_aboutUs {
+    font-size: 20px;
+    color:chocolate;
+  }
+  
+  .section_pages_aboutUs_container{
+    max-width: 1000em;
+    margin: 1em;
+    height: 400px;
+    margin-top: 80px;
+    padding: 50px 20px 30px 50px;
+    border: solid 5px rgb(201, 102, 102);
+    position: relative;
+  }
+  .section_pages_aboutUs_text{
+    max-width: 1000em;
+    margin: 1em;
+    border: 5px solid #000428;
+    border-radius: 10px;
+    background-color: rgba(250, 250, 250, 0.95);
+  }
+  
+  
+  .pages_aboutUs_title{
+    margin: 0%;
+    font-size: 70px;
+    color: #b73413;
+    font-style: normal;
+  }
+  
+  .pages_aboutUs_text {
+    font-size: 30px;
+    line-height: 1.5;
+    color:black;
+  }
+  
+  .pages_aboutUs_sign {
+    margin-top: 10px;
+    color: #004e92;
+    font-style: normal;
+    font-size: 30px;
+  }
+  
+  @media (min-width: 768px) {
+    .pages_nostros_explorador_tipo{
+      font-size: 30px;
+      }
+  
+      .pages_explorador_nombre_nosotros{
+        font-size: 25px;
+      }
+  
+      .pages_explorador_nosotros_descripcion {
+        font-size: 20px;
+      }
+  
+      .pages_explorador_nosotros_pie {
+        font-size: 25px;
+      }
+  
+      .pages_galeria_nosotros_explorador_imagen img{
+        height: 400px;
+      }
+  }
+  
+  @media (min-width: 1024px) {
+    .pages_nostros_explorador_tipo{
+      font-size: 70px;
+      }
+  
+      .pages_explorador_nombre_nosotros{
+        font-size: 35px;
+      }
+  
+      .pages_explorador_nosotros_descripcion {
+        font-size: 30px;
+      }
+  
+      .pages_explorador_nosotros_pie {
+        font-size: 35px;
+      }
+  }
+  
+  /****** FIN PAGINA NOSOTROS ******/

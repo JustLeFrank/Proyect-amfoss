@@ -1,0 +1,160 @@
+/****PAGES SERVICIOS****/
+
+/* MOBILE FIRST */
+main .texts_services {
+    margin-top: 50px;
+    display: inline-block;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .texts_services h2 {
+    font-size: 25px;
+    color: black;
+  }
+  
+  .texts_services h3 {
+    font-size: 20px;
+    color: rgb(4, 27, 46);
+    text-align: center;
+  }
+  
+  #services {
+    grid-area: novedades;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+  }
+  
+  .title_services {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    color: #b73413;
+    margin-top: 40px;
+    margin-left: 30px;
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  .services_container {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .services_container .card_services {
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.45s;
+  }
+  
+  .card_services {
+    background-color: rgba(226, 216, 204, 0.89);
+    padding: 1%;
+  }
+  
+  .services_container .card_services:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .services_container .card_services img {
+    width: 250px;
+    height: 220px;
+    border-radius: 10px;
+  }
+  
+  .services_container.card_services h4 {
+    font-weight: 600;
+  }
+  
+  .services_container .card_services p {
+    padding: 0.1rem;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  
+  @media (min-width: 768px) {
+    .textos_main_galeria_tematica h2 {
+      font-size: 35px;
+    }
+  
+    .textos_main_galeria_tematica h3 {
+      font-size: 30px;
+    }
+  
+    .title_services {
+      font-size: 40px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .textos_main_galeria_tematica h2 {
+      font-size: 40px;
+    }
+  
+    .textos_main_galeria_tematica h3 {
+      font-size: 35px;
+    }
+  
+    .title_services {
+      font-size: 50px;
+    }
+  }
+  
+  .bottomtext_services {
+    display: inline-block;
+    width: 100%;
+    min-height: 75px;
+    align-items: center;
+    justify-content: end;
+    text-align: center;
+    background-color: rgba(226, 216, 204, 0.89);
+    margin-bottom: 1px;
+    padding: 15px;
+  }
+  
+  .bottomtext_services h4 {
+    font-size: 20px;
+  }
+  .bottomtext_services p {
+    font-size: 10px;
+  }
+  
+  @media (min-width: 768px) {
+    .bottomtext_services h4 {
+      font-size: 25px;
+    }
+    .bottomtext_services p {
+      font-size: 15px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .bottomtext_services h4 {
+      font-size: 30px;
+    }
+    .bottomtext_services p {
+      font-size: 20px;
+    }
+  }
+
+  /**** FIN PAGES SERVICIOS****/

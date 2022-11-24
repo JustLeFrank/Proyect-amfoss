@@ -1,0 +1,181 @@
+/****PAGES -BENEFICIOS-****/
+
+/* MOBILE FIRST */
+
+#body_recetario {
+    background-image: linear-gradient(
+      to right,
+      #f3f4f6,
+      #f2f5f8,
+      #f1f6f9,
+      #eff7f9,
+      #eef8f9
+    );
+  }
+  
+  main .texts_beneficios {
+    margin-top: 50px;
+    display: inline-block;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .texts_beneficios h2 {
+    font-size: 20px;
+    color: black;
+  }
+  
+  #info_beneficios {
+    grid-area: novedades;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+  }
+  
+  .title_beneficios {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 22px;
+    color: #b73413;
+    margin-top: 10px;
+    margin-left: 30px;
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  .beneficios_container {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .beneficios_container .card_beneficios {
+    width: 250px;
+    height: 220px;
+    border: solid 8px;
+    border-color: black;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 15px;
+    text-align: center;
+    transition: all 0.3s;
+  }
+    
+  .beneficios_container .card_beneficios:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .beneficios_container .card_beneficios img {
+    width: 250px;
+    height: 220px;
+    align-items: center;
+  }
+  
+  @media (min-width: 768px) {
+  
+    .beneficios_container .card_beneficios {
+      width: 350px;
+      height: 320px;
+      border: solid 12px;
+    }
+  
+    .beneficios_container .card_beneficios img {
+        width: 350px;
+        height: 320px;
+    }
+  
+    .texts_beneficios h2 {
+      font-size: 30px;
+    }
+  
+    .title_beneficios {
+      font-size: 35px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+  
+    .beneficios_container .card_beneficios {
+      width: 400px;
+      height: 450px;
+      border: solid 12px;
+    }
+  
+    .beneficios_container .card_beneficios img {
+        width: 100%;
+        height: 100%;
+    }
+  
+    /* .texts_beneficios h2 {
+      font-size: 40px;
+    } */
+  
+    .title_beneficios {
+      font-size: 50px;
+    }
+  }
+  
+  #sugerencias_chef {
+    grid-area: novedades;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+  }
+  
+  .bottomtexts_beneficios {
+    display: inline-block;
+    width: 100%;
+    min-height: 75px;
+    align-items: center;
+    justify-content: end;
+    text-align: center;
+    background-color: rgba(226, 216, 204, 0.89);
+    margin-bottom: 1px;
+    padding: 15px;
+  }
+  
+  .bottomtexts_beneficios h3 {
+    font-size: 20px;
+  }
+  .bottomtexts_beneficios p {
+    font-size: 10px;
+  }
+  
+  @media (min-width: 768px) {
+    .bottomtexts_beneficios h3 {
+      font-size: 25px;
+    }
+    .bottomtexts_beneficios p {
+      font-size: 15px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .bottomtexts_beneficios h3 {
+      font-size: 30px;
+    }
+    .bottomtexts_beneficios p {
+      font-size: 20px;
+    }
+  }
+  
+  /****** FIN PAGINA RECETARIO ******/

@@ -1,0 +1,334 @@
+/******* PAGINA PRINCIPAL (INDEX) *******/
+
+/* MOBILE FIRST */
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Shippori Antique B1", sans-serif;
+    margin: 0%;
+    padding: 0%;
+  }
+  
+  #grid_index {
+    display: grid;
+    grid-template-areas:
+      "cabecera"
+      "principal"
+      "novedades"
+      "footer";
+  }
+  
+  header {
+    grid-area: cabecera;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+  
+  .nav_principal {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 75px;
+  }
+  
+  .nav_principal li a {
+    text-decoration: none;
+    color: rgb(7, 7, 7);
+    font-size: 15px;
+  }
+  
+  .nav_principal li a:hover:not(.active) {
+    /*background-color: rgb(170, 116, 87);*/
+    border-bottom: solid 3px white;
+    transition: 0.5s;
+  }
+  
+  .logo_amfoss {
+    width: auto;
+    height: 40px;
+  }
+  
+  main {
+    grid-area: principal;
+  }
+  
+  #main_principal {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(56, 45, 33);
+    background-image: url(../imagenes/background1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: unset;
+    background-position: center;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  main .textos_main_principal {
+    display: flex;
+    width: 100%;
+    height: 430px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+  }
+  .textos_main_principal h2 {
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .textos_main_principal h3 {
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .boton_main_principal {
+    font-size: 20px;
+    border: solid 1px rgba(4, 0, 245, 0.5);
+    color: #fff;
+    background-color: rgb(4, 0, 245, 0.5);
+    font-weight: bold;
+    text-decoration: none;
+    justify-content: end;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Wave */
+  .wave_i {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /*Novedades*/
+  #info {
+    grid-area: novedades;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+  }
+  
+  .title_info {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 50px;
+    color: #b73413;
+    margin-top: 40px;
+    margin-left: 30px;
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  .info_contenedor {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .info_contenedor .card {
+    width: 400px;
+    height: 450px;
+    border-radius: 16px;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+  }
+  
+  .card {
+    background-color: rgba(252, 246, 239, 0.89);
+    padding: 1%;
+  }
+  
+  .info_contenedor .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .info_contenedor .card img {
+    width: 250px;
+    height: 220px;
+    border-radius: 10px;
+  }
+  
+  .info_contenedor .card h4 {
+    font-weight: 600;
+  }
+  
+  .info_contenedor .card p {
+    padding: 0.1rem;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  
+  .info_contenedor .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color: aqua;
+  }
+  
+  @media (min-width: 768px) {
+    #grid_index {
+      grid-template-areas:
+        "cabecera cabecera cabecera"
+        "principal principal principal"
+        "novedades novedades"
+        "footer footer";
+    }
+  
+    header {
+      flex-direction: row;
+    }
+  
+    .nav_principal {
+      flex-direction: row;
+      gap: 30px;
+    }
+  
+    .nav_principal li a {
+      font-size: 18px;
+    }
+  
+    .logo_amfoss {
+      height: 50px;
+    }
+  
+    .textos_main_principal h2 {
+      font-size: 20px;
+    }
+  
+    .textos_main_principal h3 {
+      font-size: 20px;
+      align-items: center;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+  
+    .nav_principal li a {
+      font-size: 25px;
+    }
+  
+    .logo_amfoss {
+      height: 70px;
+    }
+  
+    .textos_main_principal h2 {
+      font-size: 35px;
+    }
+  
+    .textos_main_principal h3 {
+      font-size: 35px;
+      align-items: center;
+    }
+  }
+  
+  footer {
+    grid-area: footer;
+  }
+  
+  #footer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    background-color: black;
+  }
+  
+  .footer_datos {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    letter-spacing: 0.03em;
+    line-height: 1.5;
+    margin-top: 2em;
+  }
+  
+  .footer_datos p {
+    width: 100%;
+    height: 50px;
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .red_social {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .red_social li {
+    list-style: none;
+  }
+  
+  .red_social p {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .red_social p a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+  }
+  
+  @media (min-width: 768px) {
+    #footer {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  
+    .footer_datos p {
+      font-size: 20px;
+    }
+  
+    .red_social p a {
+      font-size: 20px;
+    }
+  }
+
+  /* FIN PAGINA PRINCPAL (INDEX) */
